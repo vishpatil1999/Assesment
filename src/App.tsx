@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ClassComponent from './assesmentLogic/classComponent';
+import FunctionalComponent from './assesmentLogic/functionalComponent';
+import JavascriptAssesment from './assesmentLogic/javascriptAssesment';
+import ScrollDemo from './assesmentLogic/scrollAssesment';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FunctionalComponent firstName ={'Vishakha'} lastName={'Patil'}/>    {/* while rendering component we need tto set the prop values according to the props type  */}
+      <ClassComponent  />
+      <ScrollDemo></ScrollDemo>
+      <JavascriptAssesment></JavascriptAssesment>
     </div>
   );
 }
